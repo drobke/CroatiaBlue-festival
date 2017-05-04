@@ -1,0 +1,125 @@
+#welcome{
+	background-image: url("../images/cover.jpg");
+	height: 100vh;
+	background-size: cover;
+	overflow: hidden;
+	.overlay{
+		width: 100%;
+	    height: 100%;
+	    background-color: rgba(30, 33, 49, 0.9);
+		display: none;	
+	}
+	img{
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	.headline{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		border: 4px double rgba(255,255,255,.25);
+		border-width: 4px 0;
+		transition: 0.5s;
+		cursor: default;
+		&:hover{
+			border: 4px double rgba(255,255,255,.55);
+			border-width: 4px 0;	
+			transition: 0.5s;		
+		}
+		h1{
+			font: 700 3em/1 "Oswald", sans-serif;
+		  	letter-spacing: 0;
+		  	padding: .25em 0 .325em;
+			display: block;
+			margin: 0 auto;
+		  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+		  	color: #fff;
+			cursor: default;	
+		  	span{
+		  		color: 	#000099;	
+		  	}
+		}
+	}
+  	#mc_embed_signup{
+		width:500px;
+		position: absolute;
+		right: 2%;
+		top: 15%;
+		color: #fff;
+  	}
+  	input.button{
+  		background-color: rgba(255, 0, 0, 0.6);
+  		transition: 0.5s;
+  		&:hover{
+  			background-color: rgba(255, 0, 0, 0.8);
+  			transition: 0.5s;
+  		}
+  	}
+	#mc_embed_signup input.email {
+	    font-size: 15px;
+	    border: 1px solid #ABB0B2;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+	    background-color: rgba(0,0,0,0.2);
+	    box-sizing: border-box;
+	    height: 32px;
+	    padding: 0px 0.4em;
+	    display: inline-block;
+	    margin: 0;
+	    width: 300px;
+	    vertical-align: top;
+	}
+
+	#countdown{
+	  position: absolute;
+	  right: 5%;
+	  bottom: 2%;
+	  width: 25%;
+	  text-transform: uppercase;
+	  border:10px solid rgba(255, 255, 255, 0.2);
+	  padding: 25px;
+	  transition:1s ease-in-out;
+	  &:hover{
+	  	border:10px solid rgba(255, 255, 255, 0.7);
+	  	transition: 0.5s	;	  	
+	  }	  
+	}
+	#countdowndays p{
+ 	 opacity:1;
+ 	 cursor: default;
+	}
+	#countdownhours p{
+	  opacity: 0.8;
+	  cursor: default;
+	}
+	#countdownmins p{
+	  opacity: 0.6;
+	  cursor: default;	  
+	}
+	#countdownsecs p{
+	  opacity: 0.4;
+	  cursor: default;
+	}
+	.box{
+	  white-space:nowrap;
+	  line-height:0.8;
+	  margin-bottom:10px;
+	  p{
+	  	font-size: 1em;
+		font-weight: 900;
+ 		display:inline-block;
+  		font-family: Helvetica, Arial, Sans-Serif;
+  		color: #fff;
+	  }
+	}
+}
+
+
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 20%; }
+	100% { background-position: 100% 20%; }
+}

@@ -1,19 +1,32 @@
-#welcome{
-	background-image: url("../images/cover.jpg");
+header{
 	height: 100vh;
-	background-size: cover;
-	overflow: hidden;
 	.overlay{
 		width: 100%;
 	    height: 100%;
 	    background-color: rgba(30, 33, 49, 0.9);
-		display: none;	
+	    display: none;
 	}
-	img{
+	.fullpicture{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		img{
+			height: 100%;
+			width: 100%;
+		}
+	}
+	#welcome{
 		position: relative;
 		top: 0;
 		left: 0;
 		width: 100%;
+		height: 100%;
+		img{
+			height: 100%;
+			width: 100%;
+		}
 	}
 	.headline{
 		position: absolute;
@@ -29,7 +42,7 @@
 			transition: 0.5s;		
 		}
 		h1{
-			font: 700 3em/1 "Oswald", sans-serif;
+			font-size:3em;
 		  	letter-spacing: 0;
 		  	padding: .25em 0 .325em;
 			display: block;
@@ -38,7 +51,8 @@
 		  	color: #fff;
 			cursor: default;	
 		  	span{
-		  		color: 	#000099;	
+		  		color: 	#009fff;
+		  		text-shadow: 1px 1px 1px #000;	
 		  	}
 		}
 	}
@@ -48,10 +62,36 @@
 		right: 2%;
 		top: 15%;
 		color: #fff;
+	    display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+	    align-items: center;
+		text-align: center;	    
   	}
+  	#mc_embed_signup form {
+    	text-align: center;
+    	padding: 10px 0 10px 0;
+	}
+	#mc_embed_signup_scroll{
+		display: flex;
+		flex-direction: row;
+	}
   	input.button{
   		background-color: rgba(255, 0, 0, 0.6);
   		transition: 0.5s;
+	    font-size: 13px;
+	    border: none;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+	    letter-spacing: .03em;
+	    color: #fff;
+	    box-sizing: border-box;
+	    height: 32px;
+	    line-height: 32px;
+	    padding: 0 18px;
+	    margin: 0;
+	    display: inline-block;
   		&:hover{
   			background-color: rgba(255, 0, 0, 0.8);
   			transition: 0.5s;
@@ -63,7 +103,7 @@
 	    -webkit-border-radius: 3px;
 	    -moz-border-radius: 3px;
 	    border-radius: 3px;
-	    background-color: rgba(0,0,0,0.2);
+	    background-color: rgba(0,0,0,0.5);
 	    box-sizing: border-box;
 	    height: 32px;
 	    padding: 0px 0.4em;
@@ -79,11 +119,12 @@
 	  bottom: 2%;
 	  width: 25%;
 	  text-transform: uppercase;
-	  border:10px solid rgba(255, 255, 255, 0.2);
+	  background-color: rgba(0,0,0,0.5);	  
+	  border:10px solid rgba(255, 255, 255, 0.8);
 	  padding: 25px;
 	  transition:1s ease-in-out;
 	  &:hover{
-	  	border:10px solid rgba(255, 255, 255, 0.7);
+	  	border:10px solid rgba(255, 255, 255, 1);
 	  	transition: 0.5s	;	  	
 	  }	  
 	}
@@ -102,6 +143,7 @@
 	#countdownsecs p{
 	  opacity: 0.4;
 	  cursor: default;
+	  height: 10%;
 	}
 	.box{
 	  white-space:nowrap;
@@ -111,7 +153,6 @@
 	  	font-size: 1em;
 		font-weight: 900;
  		display:inline-block;
-  		font-family: Helvetica, Arial, Sans-Serif;
   		color: #fff;
 	  }
 	}

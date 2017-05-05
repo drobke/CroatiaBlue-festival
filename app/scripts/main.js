@@ -63,7 +63,7 @@ $(document).ready(function () {
         resolution: 1000,
 
         // The size (in pixels) of the drop that results by clicking or moving the mouse over the canvas.
-        dropRadius: 5,
+        dropRadius: 6,
 
         // Basically the amount of refraction caused by a ripple. 
         // 0 means there is no refraction.
